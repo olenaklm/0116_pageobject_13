@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--<suite name="SimpleTest suite name" verbose="2" parallel="methods" thread-count="10">-->
+<suite name="SimpleTest suite name">
+    <test name="SimpleTest test name" >
+<!--        <groups>-->
+<!--            <define name="all">-->
+<!--                <include name="smoke"/>-->
+<!--                <include name="regression"/>-->
+<!--            </define>-->
+
+<!--            <run>-->
+<!--                <include name="smoke"/>-->
+<!--                <include name="regression"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+
+        <classes>
+            <class name="com.saucedemo.uitests.TestLoginWithPO"/>
+        </classes>
+    </test>
+</suite>

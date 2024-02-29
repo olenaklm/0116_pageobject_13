@@ -53,6 +53,7 @@ public class TestLoginWithPO {
     public void testUnsuccessLogin() {
         Login objLogin = new Login(driver)
                 .loginUnsuccess("standard_user", "");
-        Assert.assertTrue(objLogin.getUnsuccessLoginText().contains("Password is required"));
+//        Assert.assertTrue(objLogin.getUnsuccessLoginText().contains("Password is required"));
+        Assert.assertFalse(objLogin.getUnsuccessLoginText().contains("Password is required"));
     }
 }

@@ -21,8 +21,8 @@ public class BrowserStackTutorials {
         String getActualTitle = driver.getTitle();
         Boolean verifyTitle = driver.getTitle().equalsIgnoreCase("Most Reliable App & Cross Browser Testing Platform | BrowserStack");
         softAssert.assertEquals(getActualTitle, "Most Reliable App & Cross Browser Testing Platform | BrowserStack");
-        softAssert.assertNotEquals(getActualTitle, "Most Reliable App & Cross Browser Testing Platform | BrowserStack");
-        softAssert.assertNull(verifyTitle);
+        //softAssert.assertNotEquals(getActualTitle, "Most Reliable App & Cross Browser Testing Platform | BrowserStack");
+        //softAssert.assertNull(verifyTitle);
         softAssert.assertNotNull(verifyTitle);
         softAssert.assertAll();
     }

@@ -36,8 +36,8 @@ public class TestLoginWithPO {
      */
 
     //@Test(priority=0)
-    @Test
-    //@Test(groups =  {"smoke", "regression"})
+    //@Test
+    @Test(groups =  {"smoke", "regression"})
     public void testSuccessLogin() {
         //Create Login Page object
         Login objLogin = new Login(driver);
@@ -53,7 +53,7 @@ public class TestLoginWithPO {
     public void testUnsuccessLogin() {
         Login objLogin = new Login(driver)
                 .loginUnsuccess("standard_user", "");
-//        Assert.assertTrue(objLogin.getUnsuccessLoginText().contains("Password is required"));
+ //       Assert.assertTrue(objLogin.getUnsuccessLoginText().contains("Password is required"));
         Assert.assertFalse(objLogin.getUnsuccessLoginText().contains("Password is required"));
     }
 }
